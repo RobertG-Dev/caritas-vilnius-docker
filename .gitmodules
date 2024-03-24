@@ -1,0 +1,3 @@
+[submodule "caritas-vilnius-theme"]
+	path = caritas-vilnius-theme
+	url = git@github.com:RobertG-Dev/caritas-vilnius-theme.git
