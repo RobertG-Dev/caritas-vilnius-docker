@@ -23,7 +23,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./.data/uploads:/var/www/html/wp-content/uploads
-      - ./caritas-vilnius:/var/www/html/wp-content/themes/caritas-vilnius-theme
+      - ./caritas-vilnius-theme:/var/www/html/wp-content/themes/caritas-vilnius-theme
       - ./wordpress.ini:/usr/local/etc/php/conf.d/wordpress.ini
     depends_on:
       - db
