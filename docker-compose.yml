@@ -28,7 +28,7 @@ services:
     depends_on:
       - db
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     command: [ --max-allowed-packet=500M ]
     platform: linux/amd64
     restart: on-failure
