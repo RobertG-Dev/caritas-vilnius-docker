@@ -1,11 +1,9 @@
-version: '3.1'
-
 services:
   phpmyadmin:
     image: phpmyadmin
     restart: on-failure
     ports:
-      - "8280:80"
+      - "8380:80"
     env_file:
       - .env
     depends_on:
@@ -17,7 +15,7 @@ services:
       dockerfile: Dockerfile
     restart: on-failure
     ports:
-      - "8282:80"
+      - "8383:80"
     env_file:
       - .env
     volumes:
@@ -28,7 +26,7 @@ services:
     depends_on:
       - db
   db:
-    image: mysql:9.0.0
+    image: mysql:5.7
     command: [ --max-allowed-packet=500M ]
     platform: linux/amd64
     restart: on-failure
